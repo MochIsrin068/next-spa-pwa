@@ -1,0 +1,110 @@
+.footer{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    background-color: #0A1F1F;
+
+    padding: 60px  120px;
+    justify-content: space-between;
+
+
+    @include phone{
+        flex-direction: column;
+        padding: 32px;
+    }
+
+
+    >div:nth-child(1){
+        width: 30%;
+
+        @include phone{
+            width: 100%;
+        }
+
+        >div:nth-child(1){
+            display: flex;
+            align-items: center;
+    
+            >img{
+                width: 6%;
+                margin-right: 10px;
+            }
+    
+            >span{
+                font-weight: bold;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        >div:nth-child(2){
+            display: flex;
+            align-items: center;
+
+            >div{
+                margin: 0 6px;
+            }
+        }
+    }
+
+
+    >div:nth-child(2){
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+
+        @include phone{
+            width: 100%;
+        }
+    }
+
+    >div:nth-child(3){
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+
+        @include phone{
+            width: 100%;
+        }
+    }
+
+    >div:nth-child(4){
+        width: 30%;
+
+        @include phone{
+            width: 100%;
+        }
+
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            >input{
+                border: none;
+                padding: 10px;
+                border-radius: 10px;
+                margin-right: 8px;
+                width: 64%;
+            }
+
+            >button{
+                cursor: pointer;
+                background: #C93000;
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                padding: 8px 32px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            
+            >button:hover{
+                border: 2px solid #C93000;
+                background-color: #fff;
+                color: #C93000;
+                padding: 6px 30px;
+                font-weight: 600;
+            }
+        }
+    }
+}

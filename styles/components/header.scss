@@ -1,0 +1,68 @@
+.header{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    flex-direction : column;
+    height: 90vh;
+    
+    >div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: -30px;
+        
+        >aside:nth-child(1){
+            text-align: left;
+            width: 35%;
+            
+            @include phone{
+                width: 100%;
+                margin-top: 28px;
+            }
+            
+            >h1{
+                text-align: left;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-size: 46px;
+            }
+
+            >p{
+                font-size: 28px;
+            }
+
+            >button{
+                cursor: pointer;
+                background: #C93000;
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                padding: 8px 32px;
+                margin-top: 8px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            
+            >button:hover{
+                border: 2px solid #C93000;
+                background-color: #fff;
+                color: #C93000;
+                padding: 6px 30px;
+                font-weight: 600;
+            }
+        }
+        
+        >aside:nth-child(2){
+            @include phone{
+                display: none;
+            }
+
+            width: 60%;
+            display: flex;
+
+            >img{
+                width: 100%;
+            }
+        }
+    }
+}

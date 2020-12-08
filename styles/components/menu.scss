@@ -1,0 +1,65 @@
+.menu{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0;
+
+    color: #fff;
+    background: #0B2424;
+    padding: 6px 120px;
+
+    @include phone{
+        padding: 0 32px;
+    }
+
+    >div{
+        display: flex;
+        align-items: center;
+
+        >img{
+            width: 10%;
+            margin-right: 10px;
+        }
+
+        >span{
+            font-weight: bold;
+        }
+    }
+    
+    >ul.--desktop{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        @include phone{    
+            display: none;
+        }
+
+        >li{
+            text-decoration: none;
+            list-style: none;
+            margin : 0 10px;
+            font-size: 14px;
+        }
+    }
+
+    >ul.--mobile{
+        display: none;
+
+        @include phone{    
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        >li{
+            text-decoration: none;
+            list-style: none;
+            margin : 0 10px;
+            font-size: 20px;
+        }
+    }
+}

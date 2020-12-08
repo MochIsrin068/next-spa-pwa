@@ -1,0 +1,13 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+    background-color: #0B2424;
+
+    .space-container{
+        padding: 0 120px;
+
+        @include phone{
+            padding: 0 32px;
+        }    
+    }
+}

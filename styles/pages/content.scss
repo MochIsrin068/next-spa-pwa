@@ -1,0 +1,173 @@
+.content-services{
+    height: 100vh;
+    background-color: #0A1F1F;
+    padding: 90px 120px 0 120px;
+    color: #fff;
+    
+    @include phone{
+        padding: 32px;
+        height: auto;
+    }
+
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        margin-bottom: 40px;
+
+        @include phone{
+            text-align: center;
+        }
+
+        >h2{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__body{
+        display: flex;
+        justify-content: center;
+
+        @include phone{
+            flex-direction: column;
+        }
+
+        >div{
+            width: 25%;
+            margin: 0 16px;
+            padding: 16px;
+
+            background: #0B2424;
+            border: 2px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 10px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+            @include phone{
+                width: 100%;
+                margin: 0;
+                margin-bottom: 16px;
+            }
+
+            >img{
+                // width: 100%;
+                width: 160px;
+                height: 160px;
+            }
+
+            >div{
+                >div{
+                    display: flex;
+                    align-items: center;
+
+                    >img{
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }  
+        
+        >div:hover{
+            border: 2px solid #C93000;
+        }
+    }
+}
+
+
+.content-testimonial{
+    height: 100vh;
+    background-color: #0B2424;
+    padding: 90px 120px 0 120px;
+    color: #fff;
+
+        
+    @include phone{
+        padding: 32px;
+        height: auto;
+    }
+
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        margin-bottom: 40px;
+
+        @include phone{
+            text-align: center;
+        }
+
+        >h2{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__body{
+        display: flex;
+        justify-content: center;
+
+        @include phone{
+            flex-direction: column;
+        }
+
+        >div{
+            width: 25%;
+            margin: 0 16px;
+            padding: 16px;
+
+            background: #0B2424;
+            border: 2px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 10px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include phone{
+                width: 100%;
+                margin: 0;
+                margin-bottom: 16px;
+            }
+
+            >div{
+                display: flex;
+                align-items: center;    
+
+                >img{
+                    margin-right: 6px;
+                }
+                >div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    
+                    >h3{
+                        margin: 0;
+                    }
+                }
+
+            }
+
+            >p{
+                margin-top: 10px;
+            }
+        }  
+        
+        >div:hover{
+            border: 2px solid #C93000;
+        }
+    }
+}
